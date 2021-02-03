@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
+import Contact from '../views/Contact.vue'
 import Project from '../views/Project.vue'
 
 
@@ -11,6 +12,16 @@ const routes = [
     component: Home,
     children: [
       {
+        path: '/about',
+        name: 'About',
+        component: About
+      },
+      {
+        path: '/contact',
+        name: 'Contact',
+        component: Contact
+      },
+      {
         path: '/projects/:slug',
         name: 'Project',
         component: Project,
@@ -18,11 +29,6 @@ const routes = [
         meta: { showModal: true }
       }
     ]
-  },
-  {
-    path: '/about',
-    name: 'About',
-    component: About
   }
 ]
 

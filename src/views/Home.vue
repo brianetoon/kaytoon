@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>Home</h1>
+    <Navbar @open="openModal" />
     <Portfolio :projects="projects" @open="openModal"/>
     <Modal v-if="showModal" @close="closeModal"/>
   </div>
@@ -8,12 +8,13 @@
 
 <script>
 import store from '@/store.js'
+import Navbar from '@/components/Navbar.vue'
 import Portfolio from '@/components/Portfolio.vue'
 import Modal from '@/components/Modal.vue'
 
 export default {
   name: 'Home',
-  components: { Portfolio, Modal },
+  components: { Portfolio, Modal, Navbar },
   data() {
     return {
       projects: store.projects,
@@ -39,7 +40,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-</style>

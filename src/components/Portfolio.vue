@@ -1,17 +1,24 @@
 <template>
-    <div id="portfolio">
-      <router-link to="/" class="project" v-for="project in projects" :key="project.id">
-            <img :src="require(`@/assets/images/${project.image}`)">
-            <div class="overlay">
-                <div class="overlay-text">{{ project.title }}</div>
-            </div>
-      </router-link>
-    </div>
+    <ul id="portfolio">
+        <li class="project" v-for="project in projects" :key="project.id" @click="openModal">
+            <router-link :to="{ name: 'Project', params: { slug: project.slug } }"  >
+                    <img :src="require(`@/assets/images/${project.image}`)">
+                    <div class="overlay">
+                        <div class="overlay-text">{{ project.title }}</div>
+                    </div>
+            </router-link>
+        </li>
+    </ul>
 </template>
 
 <script>
 export default {
-    props: ['projects']
+    props: ['projects'],
+    methods: {
+        openModal() {
+            this.$emit('open')
+        }
+    }
 }
 </script>
 
@@ -19,10 +26,13 @@ export default {
 #portfolio {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  padding: 0;
+  margin: 0;
 }
 .project {
   grid-column: span 6;
   position: relative;
+  list-style-type: none;
 }
 .project img {
   display: block;

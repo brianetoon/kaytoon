@@ -20,7 +20,7 @@ export default {
 .modal {
   width: 100%;
   max-width: 850px;
-  padding: 20px;
+  /* padding: 20px; */
   background: white;
   box-sizing: border-box;
   overflow-y: auto;
@@ -33,5 +33,6 @@ export default {
   height: 100%;
   display: flex;
   justify-content: flex-end;
+  z-index: 2;
 }
 </style>

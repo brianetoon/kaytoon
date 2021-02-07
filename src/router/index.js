@@ -14,12 +14,16 @@ const routes = [
       {
         path: '/about',
         name: 'About',
-        component: About
+        component: About,
+        props: true,
+        meta: { showModal: true }
       },
       {
         path: '/contact',
         name: 'Contact',
-        component: Contact
+        component: Contact,
+        props: true,
+        meta: { showModal: true }
       },
       {
         path: '/projects/:slug',

@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div id="home" ref="home">
     <Navbar @open="openModal" />
     <Portfolio :projects="projects" @open="openModal"/>
     <Modal v-if="showModal" @close="closeModal"/>
@@ -31,12 +31,34 @@ export default {
     }
   },
   watch: {
-        $route: {
-          immediate: true,
-          handler: function(newVal, oldVal) {
-            this.showModal = newVal.meta && newVal.meta.showModal
+    $route: {
+      immediate: true,
+      handler: function(newVal, oldVal) {
+        this.showModal = newVal.meta && newVal.meta.showModal
+
+        if (this.showModal) {
+          if (document.body) {
+            document.body.classList.add('modal-open')
+          }
+        }
+        else {
+          if (document.body) {
+            document.body.classList.remove('modal-open')
+          }
+        }
       }
+    }
+  },
+  mounted() {
+    if (this.showModal) {
+      document.body.classList.add('modal-open')
     }
   }
 }
 </script>
+
+<style>
+.modal-open {
+  overflow: hidden;
+}
+</style>

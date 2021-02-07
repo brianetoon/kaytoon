@@ -1,15 +1,23 @@
 <template>
+    <ModalNav :title="project.title"/>
   <div id="project">
-      <h1>{{ project.title }}</h1>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates sequi quibusdam aut. Magnam, fugiat. Quibusdam consequatur voluptatibus voluptas sunt similique! Quos, earum. Veniam voluptates natus nisi autem soluta, qui excepturi quis voluptate distinctio, inventore atque odio, voluptas dicta! Nihil maxime laboriosam eum laudantium fugiat id culpa quasi est nam non sapiente atque omnis quia, cum labore? Veniam neque vel eveniet facilis, praesentium at quis consequuntur esse, officiis quam nemo cumque expedita repellat temporibus a ex minus quo, similique nulla corporis dolorem quos. Ratione adipisci aut cum nesciunt commodi consequuntur alias cumque, nulla nostrum. Error, voluptatum! Velit laborum commodi nemo provident est adipisci, sapiente optio, minus aperiam, voluptates blanditiis asperiores quo. Placeat reiciendis asperiores ad, ab libero dicta minima, consequuntur voluptatibus suscipit atque, amet in quae nihil assumenda nulla soluta voluptates optio autem enim sapiente necessitatibus. Laborum minus numquam quae dolore commodi nostrum eaque eveniet laboriosam incidunt earum temporibus, eligendi saepe corrupti in reiciendis vel quas voluptas dolores? Alias quod vel optio, mollitia enim nihil itaque consequatur? Necessitatibus omnis, eaque sed, illum iste accusamus pariatur nemo, error illo quia maiores? Cupiditate fugit, voluptatem asperiores minus dicta odit quaerat laudantium expedita officia, maxime quis facilis assumenda facere quam maiores quidem consectetur quae, repellat non dolorum laboriosam rerum. Deleniti qui autem iste facere incidunt dicta in tenetur minima ullam? Veritatis iure dolorem fugiat eos magnam neque perferendis, quidem molestias id ea necessitatibus unde laboriosam aperiam alias omnis ipsam! Explicabo vel commodi in fugit earum molestiae laborum eaque iusto quidem vero dolores sed impedit blanditiis qui ipsa minus, provident magnam, maiores rerum veniam nihil quis sit! Tempore tenetur vero consequatur blanditiis facere, itaque laborum similique nihil dolorem. Eligendi est harum obcaecati saepe deserunt nobis labore aspernatur distinctio incidunt aliquid. Ipsa corporis commodi necessitatibus mollitia, harum cumque iusto provident assumenda exercitationem voluptate ipsam, perferendis magni delectus est eveniet earum sunt quis at voluptas odio explicabo. Iure doloribus reiciendis totam ex dolor id dolore nulla dicta quae ullam, hic tempora nostrum minus consectetur obcaecati a alias necessitatibus sit sequi iusto natus eveniet. Fuga ipsum ex dignissimos sint enim aperiam deleniti et quisquam distinctio voluptatibus corporis ut eveniet cum asperiores laboriosam voluptas, incidunt, aut libero eos officia alias aliquam unde neque reprehenderit. Itaque voluptate eaque incidunt cum eveniet maxime voluptatum assumenda, voluptatibus quae tenetur doloremque exercitationem ab est aperiam iure blanditiis dolor consectetur culpa ipsa. Eligendi, fugit qui quas reiciendis dicta quod modi eum nobis dolores quasi officia eaque et ducimus voluptates reprehenderit molestias vero facilis accusantium cumque quos quis, mollitia dolore ipsum ad? Sed est earum nobis fuga possimus atque itaque similique facere voluptates corrupti molestiae, voluptate corporis, adipisci, numquam eius. Vitae obcaecati ducimus praesentium quod animi odit rerum magni, soluta, architecto vero eligendi perspiciatis! Dicta, doloremque. Nesciunt vel, corrupti similique hic perferendis impedit totam a dolore voluptatibus non, debitis esse cum, sunt at consequatur quo asperiores alias iure modi eos mollitia voluptatem reprehenderit quis! Natus perferendis temporibus ipsa eligendi autem laudantium quisquam modi nostrum! Dolore nisi reprehenderit molestiae provident obcaecati, distinctio numquam excepturi et in recusandae ducimus dolorum commodi facere iusto, impedit eaque necessitatibus cumque mollitia laboriosam nostrum blanditiis illo perspiciatis aperiam unde. Ea nulla quisquam maiores aperiam, in quaerat explicabo, dolorum eos tenetur blanditiis ipsam sint quibusdam inventore excepturi delectus similique fugit suscipit nam ullam repudiandae maxime? Quaerat culpa quia autem. Perspiciatis ex ut repudiandae sint, nobis culpa ipsam laborum illo blanditiis, eligendi cumque aperiam! Aliquid laborum molestiae neque quasi quisquam iste temporibus ipsam quo eius tempore delectus amet hic officia similique qui asperiores quaerat dolore placeat, adipisci ex quia! Consectetur, iure quia ratione maiores esse saepe officia illum delectus sint explicabo, ea soluta quaerat voluptatem perferendis similique exercitationem nemo aliquam eaque ipsum cumque tempore, nesciunt molestias. Incidunt exercitationem suscipit deleniti quaerat! Ab sed ea iusto quos aspernatur ullam eos excepturi officiis itaque voluptates, in velit, consectetur doloremque minima optio harum consequatur tempora rem dignissimos corporis nobis ut obcaecati eius? Dolor veniam distinctio blanditiis, quis optio accusantium at nam, ducimus reiciendis dolores laudantium doloribus pariatur eum natus voluptatibus fugit, repudiandae cumque iure nulla aperiam qui? Eligendi, tempora veniam nostrum, nemo, rerum debitis doloremque itaque repellat deserunt dolor natus deleniti nisi fugiat. Corporis cum repellat distinctio sequi officiis hic sed maiores nam velit minus incidunt, eveniet voluptas praesentium? Eum corporis culpa ullam eveniet praesentium at esse quos! Repellat deserunt harum inventore facilis placeat cum quas tempora iure, nam exercitationem minus magnam dignissimos accusantium quasi? Reiciendis iusto obcaecati alias at excepturi magni magnam dicta incidunt odio itaque, officiis debitis dolorum ipsum eveniet sapiente, quaerat dignissimos. Magni at delectus iste aspernatur, error dicta eaque sint laboriosam fugit ea maxime nihil. Sed nisi, beatae dolores amet voluptatum eum, saepe laborum fuga, repudiandae laudantium numquam nobis. Veritatis voluptatum soluta quaerat incidunt modi! Magnam odio suscipit pariatur mollitia nostrum quia, nisi expedita earum, aperiam facilis aliquid vel doloremque, laborum alias iusto. Dolorum repellat, tempora assumenda soluta obcaecati quia debitis voluptates! Possimus laborum eligendi facere accusantium ratione est consequuntur cum fugit fugiat placeat, ipsum dolore. Eveniet perspiciatis amet repudiandae ipsam nemo aliquam, adipisci fugit eaque praesentium assumenda alias enim provident consectetur autem sequi veniam explicabo atque sit, ut nihil fuga minus quod! Saepe reprehenderit, cupiditate error iste natus ducimus cum suscipit, tempora, in voluptatum culpa. Quas minima vero soluta atque reprehenderit totam fuga autem officia sint velit odit corporis dolore, voluptatem quaerat asperiores quam quibusdam expedita debitis numquam beatae ullam. Rerum voluptatibus at reiciendis inventore, cumque dolores eligendi, a, nesciunt architecto beatae quo tempora illo distinctio commodi enim. Earum minima numquam animi eius placeat, ad vel inventore eum distinctio a ex ipsam nisi aut dolorum suscipit necessitatibus dolorem ab, aperiam reiciendis. Aperiam qui, explicabo quae atque nulla sunt dolorum quia laudantium nostrum ea, at delectus minus eos velit illo earum assumenda. Repellendus assumenda nisi distinctio quaerat! In odit eveniet ea asperiores consectetur, placeat vero laudantium molestias exercitationem nobis unde voluptatem vitae maiores ducimus quae, modi reprehenderit necessitatibus mollitia velit. Quidem totam architecto unde fuga esse odit eius dolor. Sed inventore assumenda labore dignissimos illo quisquam. Maiores temporibus accusamus possimus ullam ipsa.</p>
+      <div class="intro">
+          <p v-for="para in project.intro" :key="para">{{ para }}</p>
+      </div>
+      <div class="gallery">
+          <img v-for="image in project.gallery" :key="image"
+          :src="require(`@/assets/images/${project.folder}/${image}`)">
+      </div>
   </div>
 </template>
 
 <script>
 import store from '@/store.js'
+import ModalNav from '@/components/ModalNav.vue'
 
 export default {
     props: ['slug'],
+    components: { ModalNav },
     computed: {
         project() {
             return store.projects.find(project => {
@@ -21,5 +29,29 @@ export default {
 </script>
 
 <style>
+#project {
+    padding: 20px;
+}
+.gallery img {
+    width: 100%;
+    margin-top: 20px;
+}
 
+@media screen and (min-width: 600px) {
+    #project {
+        padding: 30px;
+    }
+    .gallery img {
+        margin-top: 30px
+    }
+}
+
+@media screen and (min-width: 850px) {
+    #project{
+        padding: 40px 50px;
+    }
+    .gallery img {
+        margin-top: 45px
+    }
+}
 </style>

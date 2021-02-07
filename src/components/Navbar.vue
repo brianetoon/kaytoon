@@ -29,6 +29,13 @@ export default {
 #main-nav {
     text-align: center;
     padding: 10px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+    /* -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4); */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 #main-nav .logo {
     width: 200px;
@@ -45,10 +52,11 @@ li.link a{
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
+    font-family: 'mr-eaves-sans', sans-serif;
     color: #4a829e;
 }
-li.link a.router-link-active {
+li.link a.router-link-exact-active {
     color: black;
 }
 
@@ -57,7 +65,7 @@ li.link a.router-link-active {
         width: 240px;
     }
     li.link a {
-        font-size: 20px;
+        font-size: 24px;
     }
 }
 

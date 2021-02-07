@@ -38,10 +38,10 @@ export default {
   display: block;
   width: 100%;
 }
-
 .overlay-text {
   color: white;
   font-size: 20px;
+  font-family: 'mr-eaves-sans', sans-serif;;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -49,6 +49,8 @@ export default {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+  text-transform: uppercase;
+  width: 80%;
 }
 .overlay {
   position: absolute;
@@ -67,6 +69,11 @@ export default {
   opacity: 1;
 }
 
+@media screen and (min-width: 600px) {
+  .overlay-text {
+    font-size: 24px;
+  }
+}
 
 @media screen and (min-width: 900px) {
   .project {

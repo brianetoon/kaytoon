@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+}
+h2 {
+    color: #4a829e;
+    text-transform: uppercase;
+    font-family: 'mr-eaves-xl-sans', sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+p {
+    font-family: 'freight-sans-pro', sans-serif;
+    font-size: 16px;
+    margin: 0 0 15px 0;
+}
+p:last-child {
+    margin: 0;
+}
+#project, #about, #contact {
+    padding: 20px;
+}
+
+@media screen and (min-width: 600px) {
+    h2 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 17px;
+    }
+    #project, #about, #contact {
+        padding: 30px;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    h2 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 19px;
+    }
+    #project, #about, #contact {
+        padding: 40px 50px;
+    }
+}

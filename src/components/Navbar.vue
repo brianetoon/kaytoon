@@ -1,6 +1,6 @@
 <template>
   <nav id="main-nav">
-      <img class="logo" src="@/assets/logo.png" alt="logo">
+      <img class="logo" src="@/assets/images/logo.svg" alt="logo">
       <ul class="links">
           <li class="link">
               <router-link to="/">Portfolio</router-link>
@@ -33,8 +33,8 @@ export default {
     top: 0;
     background-color: white;
     z-index: 1;
-    /* -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
-    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4); */
+    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 #main-nav .logo {

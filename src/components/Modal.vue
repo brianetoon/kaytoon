@@ -20,7 +20,6 @@ export default {
 .modal {
   width: 100%;
   max-width: 850px;
-  /* padding: 20px; */
   background: white;
   box-sizing: border-box;
   overflow-y: auto;

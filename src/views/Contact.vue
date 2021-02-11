@@ -1,15 +1,14 @@
 <template>
+  <ModalNav title="contact"/>
   <div id="contact">
-      <h1>Contact Page</h1>
+    <p>This is the contact page</p>
   </div>
 </template>
 
 <script>
-export default {
+import ModalNav from '@/components/ModalNav.vue'
 
+export default {
+  components: { ModalNav }
 }
 </script>
-
-<style>
-
-</style>

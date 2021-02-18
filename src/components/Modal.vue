@@ -1,8 +1,8 @@
 <template>
   <div class="backdrop" @click.self="closeModal">
-      <div class="modal">
-          <router-view></router-view>
-      </div>
+    <div class="modal">
+        <router-view></router-view>
+    </div>
   </div>
 </template>
 
@@ -23,11 +23,11 @@ export default {
   background: white;
   box-sizing: border-box;
   overflow-y: auto;
+  box-shadow: -1px 0 5px 2px rgba(0, 0, 0, 0.2);
 }
 .backdrop {
   top: 0;
   position: fixed;
-  background: rgba(0,0,0,0.4);
   width: 100%;
   height: 100%;
   display: flex;

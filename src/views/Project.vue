@@ -3,6 +3,12 @@
     <div id="project">
         <div class="intro">
             <p v-for="para in project.intro" :key="para">{{ para }}</p>
+            <p class="url" v-if="project.url">
+                <i class="material-icons">language</i>
+                <a class="external-link" :href="project.url.destination" target="_blank">
+                    {{ project.url.text }}
+                </a>
+            </p>
         </div>
         <div class="gallery">
             <img v-for="image in project.gallery" :key="image"
@@ -33,6 +39,21 @@ export default {
     width: 100%;
     margin-top: 20px;
 }
+p.url {
+    display: flex;
+    align-items: center;
+}
+.url i {
+    color: lightgray;
+    padding-right: 5px;
+}
+a.external-link {
+    text-decoration: none;
+    color: black;
+}
+a.external-link:hover {
+    color: #4a829e;
+}
 
 @media screen and (min-width: 600px) {
     .gallery img {
@@ -42,7 +63,7 @@ export default {
 
 @media screen and (min-width: 850px) {
     .gallery img {
-        margin-top: 45px
+        margin-top: 50px
     }
 }
 </style>

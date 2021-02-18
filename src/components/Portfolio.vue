@@ -1,13 +1,13 @@
 <template>
     <ul id="portfolio">
-        <li class="project" v-for="project in projects" :key="project.id" @click="openModal">
-            <router-link :to="{ name: 'Project', params: { slug: project.slug } }"  >
-                    <img :src="require(`@/assets/images/${project.folder}/main.png`)">
-                    <div class="overlay">
-                        <div class="overlay-text">{{ project.title }}</div>
-                    </div>
-            </router-link>
-        </li>
+      <li class="project" v-for="project in projects" :key="project.id" @click="openModal">
+        <router-link :to="{ name: 'Project', params: { slug: project.slug } }" >
+          <img :src="require(`@/assets/images/${project.folder}/main.png`)">
+          <div class="overlay">
+              <div class="overlay-text">{{ project.title }}</div>
+          </div>
+        </router-link>
+      </li>
     </ul>
 </template>
 
@@ -41,7 +41,7 @@ export default {
 .overlay-text {
   color: white;
   font-size: 20px;
-  font-family: 'mr-eaves-sans', sans-serif;;
+  font-family: 'mr-eaves-sans', sans-serif;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -75,7 +75,7 @@ export default {
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 850px) {
   .project {
     grid-column: span 4;
   }

@@ -69,7 +69,7 @@ li.link a.router-link-exact-active {
     }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 850px) {
     #main-nav {
         display: flex;
         justify-content: space-between;

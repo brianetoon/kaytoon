@@ -107,7 +107,11 @@ export default {
             ],
             gallery: [
                 "1.png", "2.svg", "3.png", "4.png"
-            ]
+            ],
+            url: {
+                text: "www.zimmscentralvac.com",
+                destination: "https://www.zimmscentralvac.com"
+            }
         },
         {
             id: 9, 
@@ -160,7 +164,11 @@ export default {
             ],
             gallery: [
                 "1.png", "2.svg", "3.png", "4.png"
-            ]
+            ],
+            url: {
+                text: "www.lakeelectronicsgroup.com",
+                destination: "https://www.lakeelectronicsgroup.com"
+            }
         }
     ],
     about: {

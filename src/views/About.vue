@@ -1,25 +1,25 @@
 <template>
-  <ModalNav title="about"/>
   <div id="about">
+    <ModalNav title="about"/>
+    <div class="view-content about-content">
+      <img class="portrait full" alt="portrait"
+      :src="require(`@/assets/images/about/${this.about.portrait}`)">
+      <img class="portrait mobile" alt="portrait"
+      :src="require(`@/assets/images/about/${this.about.portraitMobile}`)">
 
-    <img class="portrait full" alt="portrait"
-    :src="require(`@/assets/images/about/${this.about.portrait}`)">
-    <img class="portrait mobile" alt="portrait"
-    :src="require(`@/assets/images/about/${this.about.portraitMobile}`)">
+      <div class="about-kay">
+        <h2>{{ this.about.kay.header }}</h2>
+        <p v-for="para in this.about.kay.info" :key="para">{{ para }}</p>
+      </div>
 
-    <div class="about-kay">
-      <h2>{{ this.about.kay.header }}</h2>
-      <p v-for="para in this.about.kay.info" :key="para">{{ para }}</p>
+      <div class="about-website">
+        <h2>{{ this.about.website.header }}</h2>
+        <p v-for="para in this.about.website.info" :key="para">{{ para }} </p>
+      </div>
+
+      <img class="quote" alt="quote"
+        :src="require(`@/assets/images/about/${this.about.quote}`)">
     </div>
-
-    <div class="about-website">
-      <h2>{{ this.about.website.header }}</h2>
-      <p v-for="para in this.about.website.info" :key="para">{{ para }} </p>
-    </div>
-
-    <img class="quote" alt="quote"
-      :src="require(`@/assets/images/about/${this.about.quote}`)">
-
   </div>
 </template>
 
@@ -38,7 +38,7 @@ export default {
 </script>
 
 <style>
-#about {
+.about-content {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 25px;
@@ -71,12 +71,12 @@ img.portrait.full{
 img.quote {
   width: 100%;
 }
-#about h2 {
+.about-content h2 {
   margin-bottom: 15px;
 }
 
 @media screen and (min-width: 600px) {
-  #about {
+  .about-content {
     display: inline-block;
   }
   img.portrait {

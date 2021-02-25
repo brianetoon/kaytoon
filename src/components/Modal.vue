@@ -22,7 +22,7 @@ export default {
   max-width: 850px;
   background: white;
   box-sizing: border-box;
-  overflow-y: auto;
+  overflow-y: scroll;
   box-shadow: -1px 0 5px 2px rgba(0, 0, 0, 0.2);
 }
 .backdrop {

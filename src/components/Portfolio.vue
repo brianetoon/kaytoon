@@ -2,7 +2,7 @@
     <ul id="portfolio">
       <li class="project" v-for="project in projects" :key="project.id" @click="openModal">
         <router-link :to="{ name: 'Project', params: { slug: project.slug } }" >
-          <img :src="require(`@/assets/images/${project.folder}/main.png`)">
+          <img :src="require(`@/assets/images/${project.folder}/main.jpg`)">
           <div class="overlay">
               <div class="overlay-text">{{ project.title }}</div>
           </div>
@@ -65,9 +65,13 @@ export default {
   background-image: url('../assets/images/overlay.png');
   background-size: contain;
 }
-.project:hover .overlay {
-  opacity: 1;
+
+@media (hover: hover) and (pointer: fine) {
+  .project:hover .overlay {
+    opacity: 1;
+  }
 }
+
 
 @media screen and (min-width: 600px) {
   .overlay-text {

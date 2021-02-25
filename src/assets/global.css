@@ -21,7 +21,7 @@ a {
 p:last-child {
     margin: 0;
 }
-#project, #about, #contact {
+.view-content {
     padding: 20px;
 }
 
@@ -32,7 +32,7 @@ p:last-child {
     p, input, textarea {
         font-size: 17px;
     }
-    #project, #about, #contact {
+    .view-content {
         padding: 30px;
     }
 }
@@ -44,7 +44,7 @@ p:last-child {
     p, input, textarea {
         font-size: 19px;
     }
-    #project, #about, #contact {
+    .view-content {
         padding: 50px;
     }
 }

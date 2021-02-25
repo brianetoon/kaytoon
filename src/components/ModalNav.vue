@@ -21,6 +21,7 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     background: white;

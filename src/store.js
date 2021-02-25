@@ -3,7 +3,6 @@ export default {
         {
             id: 1, 
             title: "Great Lakes Water Authority",
-            image: "glwa.png",
             slug: "great-lakes-water-authority",
             folder: "great-lakes-water",
             intro: [
@@ -12,13 +11,18 @@ export default {
                 "My role was to convert information from Bridgeport into clear and engaging visuals that support GLWA’s efforts."
             ],
             gallery: [
-                "1.png", "2.svg", "3.png", "4.png", "5.png", "6.svg", "7.png"
+                { hqi: "1.jpg", lqi: "1-low.jpg" },
+                { hqi: "2.svg", lqi: "2.svg" },
+                { hqi: "3.jpg", lqi: "3-low.jpg" },
+                { hqi: "4.jpg", lqi: "4-low.jpg" },
+                { hqi: "5.jpg", lqi: "5-low.jpg" },
+                { hqi: "6.svg", lqi: "6.svg" },
+                { hqi: "7.jpg", lqi: "7-low.jpg" },
             ]
         },
         {
             id: 2, 
             title: "Ypsilanti Meals on Wheels",
-            image: "rosie.png",
             slug: "ypsilanti-meals-on-wheels",
             folder: "ypsi-meals",
             intro: [
@@ -26,26 +30,32 @@ export default {
                 "My goal was to refresh their existing branding and give a warm, human feeling that reflected their work. I worked with YMOW staff to create professional, approachable designs that reflect their work in the community."
             ],
             gallery: [
-                "1.png", "2.png", "3.png", "4.svg", "5.png", "6.png"
+                { hqi: "1.jpg", lqi: "1-low.jpg" },
+                { hqi: "2.jpg", lqi: "2-low.jpg" },
+                { hqi: "3.jpg", lqi: "3-low.jpg" },
+                { hqi: "4.svg", lqi: "4.svg" },
+                { hqi: "5.jpg", lqi: "5-low.jpg" },
+                { hqi: "6.jpg", lqi: "6-low.jpg" }
             ]
         },
         {
             id: 3, 
             title: "Simpson Garden Park",
-            image: "garden.png",
             slug: "simpson-garden-park",
             folder: "simpson-garden",
             intro: [
                 "Simpson Garden Park is an 11-acre garden that is part of the parks services of Bowling Green, Ohio. It is tucked into a residential area, and is a hidden gem. I was hired to design a series of newsletters to highlight the garden’s many attractions. Gardening education, as well as support and volunteer opportunities, were also featured." 
             ],
             gallery: [
-                "1.png", "2.png", "3.png", "4.png"
+                { hqi: "1.jpg", lqi: "1-low.jpg" },
+                { hqi: "2.jpg", lqi: "2-low.jpg" },
+                { hqi: "3.jpg", lqi: "3-low.jpg" },
+                { hqi: "4.jpg", lqi: "4-low.jpg" }
             ]
         },
         {
             id: 4, 
             title: "Torrance Refining Company",
-            image: "torrance.png",
             slug: "torrance-refining-company",
             folder: "torrance-refining",
             intro: [
@@ -53,39 +63,53 @@ export default {
                 "The refinery has hosted three major community events for which I produced banners, posters, invitations, and many related pieces. This involved coordinating with printers and suppliers near the refinery, and keeping on schedule. In 2017, I designed 60 posters and banners for their neighborhood open house. In 2018, I designed 36 items for that year’s event. In 2019, the refinery celebrated its 90th anniversary with a community-wide picnic for which I designed 40 posters and centerpiece items." 
             ],
             gallery: [
-                "1.png", "2.png", "3.png", "4.png"
+                { hqi: "1.jpg", lqi: "1-low.jpg" },
+                { hqi: "2.jpg", lqi: "2-low.jpg" },
+                { hqi: "3.jpg", lqi: "3-low.jpg" },
+                { hqi: "4.jpg", lqi: "4-low.jpg" }
             ]
         },
         {
             id: 5, 
             title: "Logo Design",
-            image: "logos.png",
             slug: "logo-design",
             folder: "logos",
             intro: [
                 "It’s a privilege to develop an identity for a business venture, or create an icon for a new initiative. I believe listening and understanding the client’s goal and intent is the first step in the creative process. I enjoyed working with each of these groups to create their logos."
             ],
             gallery: [
-                "1.png", "2.png", "3.png", "4.svg", "5.png", "6.png", "7.png", "8.png", "9.png", "10.png", "11.png", "12.png", "13.png"
+                { hqi: "1.jpg", lqi: "1-low.jpg" },
+                { hqi: "2.jpg", lqi: "2-low.jpg" },
+                { hqi: "3.jpg", lqi: "3-low.jpg" },
+                { hqi: "4.svg", lqi: "4.svg" },
+                { hqi: "5.jpg", lqi: "5-low.jpg" },
+                { hqi: "6.jpg", lqi: "6-low.jpg" },
+                { hqi: "7.jpg", lqi: "7-low.jpg" },
+                { hqi: "8.jpg", lqi: "8-low.jpg" },
+                { hqi: "9.jpg", lqi: "9-low.jpg" },
+                { hqi: "10.jpg", lqi: "10-low.jpg" },
+                { hqi: "11.jpg", lqi: "11-low.jpg" },
+                { hqi: "12.jpg", lqi: "12-low.jpg" },
+                { hqi: "13.jpg", lqi: "13-low.jpg" },
             ]
         },
         {
             id: 6, 
             title: "Toledo Refining Company",
-            image: "toledo.png",
             slug: "toledo-refining-company",
             folder: "toledo-refining",
             intro: [
                 "Toledo Refining Company has a 125-year history as a top employer in northwest Ohio. I have been privileged to work with them in designing their employee communications. The topics covered have ranged from upgrades to the physical plant, refinery history, and family-friendly events."
             ],
             gallery: [
-                "1.png", "2.png", "3.png"
+                { hqi: "1.jpg", lqi: "1-low.jpg" },
+                { hqi: "2.jpg", lqi: "2-low.jpg" },
+                { hqi: "3.jpg", lqi: "3-low.jpg" }
             ]
         },
         {
             id: 7, 
             title: "ProMedica",
-            image: "promedica.png",
             slug: "pro-medica",
             folder: "promedica",
             intro: [
@@ -93,20 +117,23 @@ export default {
                 "I have worked with Mission Partners by designing print and online communications for their supporters in the business community. Our purpose has been to foster awareness, financial assistance, and participation."
             ],
             gallery: [
-                "1.png", "2.png"
+                { hqi: "1.jpg", lqi: "1-low.jpg" },
+                { hqi: "2.jpg", lqi: "2-low.jpg" }
             ]
         },
         {
             id: 8, 
             title: "Zimm's Central Vacuum",
-            image: "zimm.png",
             slug: "zimms-central-vacuum",
             folder: "zimms-vac",
             intro: [
                 "I was hired by Zimm’s to revamp the company’s existing website. With the help of a web developer, the site was made more concise, easy to use, and modern. I rewrote the text to be briefer, while keeping all of the information necessary for customers to make a buying decision. The design was reworked to reflect Zimm’s existing brand affiliations while presenting a clean, inviting style."
             ],
             gallery: [
-                "1.png", "2.svg", "3.png", "4.png"
+                { hqi: "1.jpg", lqi: "1-low.jpg" },
+                { hqi: "2.svg", lqi: "2.svg" },
+                { hqi: "3.jpg", lqi: "3-low.jpg" },
+                { hqi: "4.jpg", lqi: "4-low.jpg" }
             ],
             url: {
                 text: "www.zimmscentralvac.com",
@@ -116,46 +143,48 @@ export default {
         {
             id: 9, 
             title: "Toledo Symphony Orchestra",
-            image: "symphony.png",
             slug: "toledo-symphony-orchestra",
             folder: "toledo-symphony",
             intro: [
                 "I had the honor of working with the Toledo Symphony Orchestra to design the graphics for their premier event of the year.  Invitations, programs and signage were produced for an event that combined an evening of live music with coordinating food and drink."
             ],
             gallery: [
-                "1.png", "2.png", "3.png"
+                { hqi: "1.jpg", lqi: "1-low.jpg" },
+                { hqi: "2.jpg", lqi: "2-low.jpg" },
+                { hqi: "3.jpg", lqi: "3-low.jpg" }
             ]
         },
         {
             id: 10, 
             title: "American Thyroid Association",
-            image: "ata.png",
             slug: "american-thyroid-association",
             folder: "american-thyroid",
             intro: [
                 "The American Thyroid Association hired me to design their Case for Support to increase awareness of their valuable work. The goals of the piece were to highlight their work to date, and to appeal for support for their ongoing work. I made use of infographics to quickly and clearly convey their message."
             ],
             gallery: [
-                "1.png", "2.png", "3.png", "4.png"
+                { hqi: "1.jpg", lqi: "1-low.jpg" },
+                { hqi: "2.jpg", lqi: "2-low.jpg" },
+                { hqi: "3.jpg", lqi: "3-low.jpg" },
+                { hqi: "4.jpg", lqi: "4-low.jpg" }
             ]
         },
         {
             id: 11, 
             title: "Sylvania Schools",
-            image: "school.png",
             slug: "sylvania-schools",
             folder: "sylvania-schools",
             intro: [
                 "Sylvania Schools hired me to design communications to build awareness, advocacy, and involvement with the school system. We collaborated to create pieces that share information, encourage support, and celebrate accomplishments of students and staff."
             ],
             gallery: [
-                "1.png", "2.png"
+                { hqi: "1.jpg", lqi: "1-low.jpg" },
+                { hqi: "2.jpg", lqi: "2-low.jpg" }
             ]
         },
         {
             id: 12, 
             title: "Lake Electronics Group",
-            image: "lake.png",
             slug: "lake-electronics-group",
             folder: "lake-electronics",
             intro: [
@@ -163,7 +192,10 @@ export default {
                 "With input from the owners, I designed a new logo and visual identity that drove the look of their printed items, vehicles and website. I also rewrote the text for the new website, making it more concise and user-friendly."
             ],
             gallery: [
-                "1.png", "2.svg", "3.png", "4.png"
+                { hqi: "1.jpg", lqi: "1-low.jpg" },
+                { hqi: "2.svg", lqi: "2.svg" },
+                { hqi: "3.jpg", lqi: "3-low.jpg" },
+                { hqi: "4.jpg", lqi: "4-low.jpg" }
             ],
             url: {
                 text: "www.lakeelectronicsgroup.com",
@@ -185,9 +217,8 @@ export default {
                 "I designed and created this site using Sketch and Zeplin software. The designs featured in the portfolio section were created in Adobe PhotoShop, InDesign and Illustrator. I wrote the text to tell my own story. The development for this site, and the portfolio sites, was skillfully done by Brian Toon.  brian.elliot.toon@gmail.com"
             ]
         },
-        portrait: "portrait.png",
-        portraitMobile: "portrait-mobile.png",
-        quote: "quote.svg",
-        quoteMobile: "quote-mobile.svg"
+        portrait: "portrait.jpg",
+        portraitMobile: "portrait-mobile.jpg",
+        quote: "quote.svg"
     }
 };

@@ -1,13 +1,15 @@
 <template>
-  <ModalNav title="contact"/>
   <div id="contact">
-    <p>I’d love to hear from you! Feel free to ask questions about my work, leave a comment, or just say hi.</p>
-    <form>
-      <input type="text" placeholder="Name">
-      <input type="email" placeholder="Email">
-      <textarea placeholder="Your message..."></textarea>
-      <button class="submit">Send message</button>
-    </form>
+    <ModalNav title="contact"/>
+    <div class="view-content">
+      <p>I’d love to hear from you! Feel free to ask questions about my work, leave a comment, or just say hi.</p>
+      <form>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Your message..."></textarea>
+        <button class="submit">Send message</button>
+      </form>
+    </div>
   </div>
 </template>
 

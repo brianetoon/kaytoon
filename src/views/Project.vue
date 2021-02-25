@@ -1,18 +1,21 @@
 <template>
-    <ModalNav :title="project.title"/>
     <div id="project">
-        <div class="intro">
-            <p v-for="para in project.intro" :key="para">{{ para }}</p>
-            <p class="url" v-if="project.url">
-                <i class="material-icons">language</i>
-                <a class="external-link" :href="project.url.destination" target="_blank">
-                    {{ project.url.text }}
-                </a>
-            </p>
-        </div>
-        <div class="gallery">
-            <img v-for="image in project.gallery" :key="image"
-            :src="require(`@/assets/images/${project.folder}/${image}`)">
+        <ModalNav :title="project.title"/>
+        <div class="view-content">
+            <div class="intro">
+                <p v-for="para in project.intro" :key="para">{{ para }}</p>
+                <p class="url" v-if="project.url">
+                    <i class="material-icons">language</i>
+                    <a class="external-link" :href="project.url.destination" target="_blank">
+                        {{ project.url.text }}
+                    </a>
+                </p>
+            </div>
+            <div class="gallery">
+                <img v-for="image in project.gallery" :key="image" class="lazyload" alt="img"
+                :src="require(`@/assets/images/${project.folder}/${image.lqi}`)"
+                :data-src="require(`@/assets/images/${project.folder}/${image.hqi}`)">
+            </div>
         </div>
     </div>
 </template>
@@ -57,13 +60,13 @@ a.external-link:hover {
 
 @media screen and (min-width: 600px) {
     .gallery img {
-        margin-top: 30px
+        margin-top: 30px;
     }
 }
 
 @media screen and (min-width: 850px) {
     .gallery img {
-        margin-top: 50px
+        margin-top: 50px;
     }
 }
 </style>

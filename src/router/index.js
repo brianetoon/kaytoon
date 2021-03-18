@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
+import store from '../store.js'
 
 const routes = [
   {
@@ -26,7 +27,24 @@ const routes = [
         name: 'Project',
         component: () => import(/* webpackChunkName: "Project" */ '../views/Project.vue'),
         props: true,
-        meta: { showModal: true }
+        meta: { showModal: true },
+        beforeEnter: (to, from, next) => {
+          const exists = store.projects.find(project => {
+            return project.slug === to.params.slug
+          })
+          if (exists) {
+            next()
+          }
+          else {
+            next({ name: 'NotFound' })
+          }
+        }
+      },
+      {
+        path: '/:NotFound(.*)*',
+        name: 'NotFound',
+        component: () => import(/* webpackChunkName: "NotFound" */ '../views/NotFound.vue'),
+        meta: {showModal: true}
       }
     ]
   }

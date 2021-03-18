@@ -2,65 +2,47 @@
   <div id="contact">
     <ModalNav title="contact"/>
     <div class="view-content">
-      <p>I’d love to hear from you! Feel free to ask questions about my work, leave a comment, or just say hi.</p>
-      <form>
-        <input type="text" placeholder="Name">
-        <input type="email" placeholder="Email">
-        <textarea placeholder="Your message..."></textarea>
-        <button class="submit">Send message</button>
-      </form>
+      <transition name="switch" mode="out-in">
+        <ContactForm @success="messageSent" v-if="!success" />
+        <Success v-else />
+      </transition>
     </div>
   </div>
 </template>
 
 <script>
 import ModalNav from '@/components/ModalNav.vue'
+import ContactForm from '@/components/ContactForm.vue'
+import Success from '@/components/Success.vue'
 
 export default {
-  components: { ModalNav }
+  components: { ModalNav, ContactForm, Success },
+  data() {
+    return {
+      success: false
+    }
+  },
+  methods: {
+    messageSent() {
+      this.success = true
+    }
+  }
 }
 </script>
 
 <style>
-input, textarea {
-  display: block;
-  width: 100%;
-  margin-top: 20px;
-  padding: 12px;
-  box-sizing: border-box;
-  border-radius: 4px;
-  border: 1px solid lightgray;
-}
-button.submit {
-  padding: 12px;
-  margin-top: 20px;
-  border: none;
-  background: #4a829e;
-  font-family: 'mr-eaves-sans', sans-serif;
-  text-transform: uppercase;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 4px;
-}
-textarea {
-  height: 200px;
-}
-input:focus,
-textarea:focus,
-button:focus {
-    outline: transparent;
-    border: 2px solid #4a829e;
-}
-
-@media screen and (min-width: 600px) {
-  input, textarea, button.submit {
-    margin-top: 30px;
+  .switch-enter-from,
+  .switch-leave-to {
+    opacity: 0;
+    transform: translateY(100px);
   }
-}
-@media screen and (min-width: 850px) {
-  button.submit {
-   font-size: 18px;
+  .switch-enter-to,
+  .switch-leave-from {
+    opacity: 1;
+    transform: translateY(0);
   }
-}
+  .switch-enter-active,
+  .switch-leave-active {
+    transition: all 0.4s 0.4s ease;
+  }
 </style>

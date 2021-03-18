@@ -1,6 +1,9 @@
 body {
     margin: 0;
 }
+* {
+    font-family: 'freight-sans-pro', sans-serif;
+}
 h2 {
     color: #4a829e;
     text-transform: uppercase;
@@ -9,7 +12,6 @@ h2 {
     margin: 0;
 }
 p, input, textarea {
-    font-family: 'freight-sans-pro', sans-serif;
     font-size: 16px;
 }
 p {

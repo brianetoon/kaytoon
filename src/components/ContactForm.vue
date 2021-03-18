@@ -3,27 +3,26 @@
         <p>I’d love to hear from you! Feel free to ask questions about my work, leave a comment, or just say hi.</p>
         <Form @submit="submit" class="contact-form" :validation-schema="schema">
 
+            <Field name="name" v-slot="{ field }">
+                <input type="text" v-bind="field" v-model="form.name" name="name" placeholder="Name">
+            </Field>
+            <transition name="error">
+                <ErrorMessage class="error" name="name" />
+            </transition>
 
-                <Field name="name" v-slot="{ field }">
-                    <input type="text" v-bind="field" v-model="form.name" name="name" placeholder="Name">
-                </Field>
-                <transition name="error">
-                    <ErrorMessage class="error" name="name" />
-                </transition>
+            <Field name="email" v-slot="{ field }">
+                <input type="email" v-bind="field" v-model="form.email" name="email" placeholder="Email">
+            </Field>
+            <transition name="error">
+                <ErrorMessage class="error" name="email" />
+            </transition>
 
-                <Field name="email" v-slot="{ field }">
-                    <input type="email" v-bind="field" v-model="form.email" name="email" placeholder="Email">
-                </Field>
-                <transition name="error">
-                    <ErrorMessage class="error" name="email" />
-                </transition>
-
-                <Field name="message" v-slot="{ field }">
-                    <textarea v-bind="field" v-model="form.message" name="message" placeholder="Your message..."></textarea>
-                </Field>
-                <transition name="error">
-                    <ErrorMessage class="error" name="message" />
-                </transition>
+            <Field name="message" v-slot="{ field }">
+                <textarea v-bind="field" v-model="form.message" name="message" placeholder="Your message..."></textarea>
+            </Field>
+            <transition name="error">
+                <ErrorMessage class="error" name="message" />
+            </transition>
 
             <button class="submit" :disabled="submitting">
                 <div class="button-text" v-if="!submitting">Send message</div>
@@ -38,6 +37,7 @@
 <script>
 import { Field, Form, ErrorMessage } from 'vee-validate'
 import * as yup from 'yup'
+import axios from 'axios'
 import Spinner from '@/components/Spinner.vue'
 
 export default {
@@ -66,14 +66,17 @@ export default {
   methods: {
     submit() {
         this.submitting = true
-        console.log('submitting...')
-        setTimeout(() => {
-            console.log('submitted!')
-            console.log(this.form.name)
-            console.log(this.form.email)
-            console.log(this.form.message)
+        axios.post('mail.php', this.form).then(() => {
             this.$emit('success')
-        }, 2000)
+        })
+        // console.log('submitting...')
+        // setTimeout(() => {
+        //     console.log('submitted!')
+        //     console.log(this.form.name)
+        //     console.log(this.form.email)
+        //     console.log(this.form.message)
+        //     this.$emit('success')
+        // }, 2000)
     }
   }
 }
@@ -138,16 +141,6 @@ button:focus {
 .error-enter-active,
 .error-leave-active {
     transition: all 0.3s ease;
-}
-
-@keyframes wobble {
-    0% { transform: translateY(-10px); opacity: 0; }
-    50% { transform: translateY(0px); opacity: 1; }
-    60% { transform: translateX(6px);}
-    60% { transform: translateX(-6px);}
-    60% { transform: translateX(4px);}
-    60% { transform: translateX(-4px);}
-    60% { transform: translateX(0);}
 }
 
 @media screen and (min-width: 600px) {

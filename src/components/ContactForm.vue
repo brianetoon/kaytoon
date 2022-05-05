@@ -1,5 +1,5 @@
 <template>
-    <div class="contact-form">
+    <div class="contact">
         <p>I’d love to hear from you! Feel free to ask questions about my work, leave a comment, or just say hi.</p>
         <Form @submit="submit" class="contact-form" :validation-schema="schema">
 
@@ -69,20 +69,15 @@ export default {
         axios.post('mail.php', this.form).then(() => {
             this.$emit('success')
         })
-        // console.log('submitting...')
-        // setTimeout(() => {
-        //     console.log('submitted!')
-        //     console.log(this.form.name)
-        //     console.log(this.form.email)
-        //     console.log(this.form.message)
-        //     this.$emit('success')
-        // }, 2000)
     }
   }
 }
 </script>
 
 <style>
+form.contact-form {
+    position: relative;
+}
 input, textarea {
     display: block;
     width: 100%;

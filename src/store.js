@@ -27,7 +27,7 @@ export default {
             folder: "ypsi-meals",
             intro: [
                 "Ypsilanti Meals on Wheels’ mission is to deliver meals, pet supplies, personal items, and a daily check-in to the area’s homebound population. YMOW was in their 45th year of service when they hired me to design their new communication pieces.",
-                "My goal was to refresh their existing branding and give a warm, human feeling that reflected their work. I worked with YMOW staff to create professional, approachable designs that reflect their work in the community."
+                "My goal was to refresh their existing branding and give a warm, human feeling to represent their services. I worked with YMOW staff to create professional, approachable designs that reflect their work in the community."
             ],
             gallery: [
                 { hqi: "1.jpg", lqi: "1-low.jpg" },
@@ -60,7 +60,7 @@ export default {
             folder: "torrance-refining",
             intro: [
                 "I have worked with the Torrance Refinery since 2017, and we have collaborated successfully from three time zones apart. The message of our work has been their role in providing a reliable supply of fuels while being a fair employer and good neighbor.",
-                "The refinery has hosted three major community events for which I produced banners, posters, invitations, and many related pieces. This involved coordinating with printers and suppliers near the refinery, and keeping on schedule. In 2017, I designed 60 posters and banners for their neighborhood open house. In 2018, I designed 36 items for that year’s event. In 2019, the refinery celebrated its 90th anniversary with a community-wide picnic for which I designed 40 posters and centerpiece items." 
+                "The refinery has hosted three major community events for which I produced banners, posters, invitations, and many related pieces. This involved coordinating with printers and suppliers in the Torrance area, and keeping on schedule. In 2017, I designed 60 posters and banners for their neighborhood open house. In 2018, I designed 36 items for that year’s event. In 2019, the refinery celebrated its 90th anniversary with a community-wide picnic for which I designed 40 posters and centerpiece items." 
             ],
             gallery: [
                 { hqi: "1.jpg", lqi: "1-low.jpg" },
@@ -75,7 +75,7 @@ export default {
             slug: "logo-design",
             folder: "logos",
             intro: [
-                "It’s a privilege to develop an identity for a business venture, or create an icon for a new initiative. I believe listening and understanding the client’s goal and intent is the first step in the creative process. I enjoyed working with each of these groups to create their logos."
+                "It is a privilege to develop an identity for a business venture, or to create an icon for a new initiative. I believe listening and understanding the client’s goal and intent is the first step in the creative process. I enjoyed working with each of these groups to create their logos."
             ],
             gallery: [
                 { hqi: "1.jpg", lqi: "1-low.jpg" },
@@ -113,7 +113,7 @@ export default {
             slug: "pro-medica",
             folder: "promedica",
             intro: [
-                "ProMedica is a non-profit health organization centered in northwest Ohio. Mission Partners is ProMedica’s program that enables area businesses to be a part of health and well-being initiatives in the region.",
+                "ProMedica is a non-profit health organization centered in northwest Ohio. Mission Partners is ProMedica’s program that enables area businesses to contribute to health and well-being initiatives in the region.",
                 "I have worked with Mission Partners by designing print and online communications for their supporters in the business community. Our purpose has been to foster awareness, financial assistance, and participation."
             ],
             gallery: [

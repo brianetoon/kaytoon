@@ -23,6 +23,7 @@ export default {
     align-items: center;
     position: -webkit-sticky;
     position: sticky;
+    z-index: 1;
     top: 0;
     background: white;
     -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);

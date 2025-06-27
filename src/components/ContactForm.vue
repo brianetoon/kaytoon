@@ -37,8 +37,8 @@
 <script>
 import { Field, Form, ErrorMessage } from 'vee-validate'
 import * as yup from 'yup'
-import axios from 'axios'
 import Spinner from '@/components/Spinner.vue'
+import emailjs from 'emailjs-com'
 
 export default {
   components: {
@@ -64,13 +64,34 @@ export default {
     }
   },
   methods: {
-    submit() {
-        this.submitting = true
-        axios.post('mail.php', this.form).then(() => {
-            this.$emit('success')
-        })
+        submit() {
+            this.submitting = true
+
+            emailjs.send(
+                "service_ggql7zd", 
+                "template_efh2c1g", 
+                {
+                    name: this.form.name,
+                    email: this.form.email,
+                    message: this.form.message
+                },
+                "fcx-li92gIHcfXpqQ"
+            )
+            .then(() => {
+                this.$emit('success')
+                this.form.name = ''
+                this.form.email = ''
+                this.form.message = ''
+            })
+            .catch((error) => {
+                console.error('Email send error:', error)
+                alert('Oops! Something went wrong. Please try again.')
+            })
+            .finally(() => {
+                this.submitting = false
+            })
+        }
     }
-  }
 }
 </script>
 

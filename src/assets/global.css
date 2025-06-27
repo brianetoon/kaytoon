@@ -17,9 +17,6 @@ p, input, textarea {
 p {
     margin: 0 0 15px 0;
 }
-a {
-    -webkit-tap-highlight-color: transparent;
-}
 p:last-child {
     margin: 0;
 }

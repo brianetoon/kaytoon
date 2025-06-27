@@ -102,9 +102,10 @@ export default {
                 "Toledo Refining Company has a 125-year history as a top employer in northwest Ohio. I have been privileged to work with them in designing their employee communications. The topics covered have ranged from upgrades to the physical plant, refinery history, and family-friendly events."
             ],
             gallery: [
-                { hqi: "1.jpg", lqi: "1-low.jpg" },
-                { hqi: "2.jpg", lqi: "2-low.jpg" },
-                { hqi: "3.jpg", lqi: "3-low.jpg" }
+                { hqi: "1.png", lqi: "1-low.png" },
+                { hqi: "2.png", lqi: "2-low.png" },
+                { hqi: "3.jpg", lqi: "3-low.jpg" },
+                { hqi: "4.jpg", lqi: "4-low.jpg" },
             ]
         },
         {

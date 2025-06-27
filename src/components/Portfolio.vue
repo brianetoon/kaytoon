@@ -113,7 +113,7 @@ export default {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1400px) {
   .project {
     grid-column: span 3;
   }

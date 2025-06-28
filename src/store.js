@@ -215,7 +215,7 @@ export default {
         website: {
             header: "About This Website",
             info: [
-                "I designed and created this site using Sketch and Zeplin software. The designs featured in the portfolio section were created in Adobe PhotoShop, InDesign and Illustrator. I wrote the text to tell my own story. The development for this site, and the portfolio sites, was skillfully done by Brian Toon.  brian.elliot.toon@gmail.com"
+                "I designed and created this site using Sketch and Zeplin software. The designs featured in the portfolio section were created in Adobe PhotoShop, InDesign and Illustrator. I wrote the text to tell my own story. The development for this site, and the portfolio sites, was skillfully done by "
             ]
         },
         portrait: "portrait.jpg",

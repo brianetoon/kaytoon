@@ -37,7 +37,7 @@ i.close {
 }
 i.close:hover {
     cursor: pointer;
-    color: #4a829e;
+    color: var(--clr-primary);
 }
 
 @media screen and (min-width: 600px) {

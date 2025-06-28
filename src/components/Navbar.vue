@@ -54,7 +54,7 @@ li.link a{
     font-weight: bold;
     font-size: 20px;
     font-family: 'mr-eaves-sans', sans-serif;
-    color: #4a829e;
+    color: var(--clr-primary);
 }
 li.link a.router-link-exact-active {
     color: black;

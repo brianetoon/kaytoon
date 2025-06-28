@@ -51,11 +51,7 @@ p.url {
     padding-right: 5px;
 }
 a.external-link {
-    text-decoration: none;
-    color: black;
-}
-a.external-link:hover {
-    color: #4a829e;
+    color: var(--clr-primary);
 }
 
 @media screen and (min-width: 600px) {

@@ -113,7 +113,7 @@ button.submit {
     padding: 12px;
     margin-top: 23px;
     border: none;
-    background: #4a829e;
+    background: var(--clr-primary);
     cursor: pointer;
     border-radius: 4px;
 }
@@ -133,7 +133,7 @@ textarea {
 input:focus,
 textarea:focus {
     outline: transparent;
-    border: 2px solid #4a829e;
+    border: 2px solid var(--clr-primary);
 }
 button:focus {
     outline: transparent;

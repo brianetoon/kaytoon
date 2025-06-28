@@ -14,7 +14,9 @@
 
       <div class="about-website">
         <h2>{{ this.about.website.header }}</h2>
-        <p v-for="para in this.about.website.info" :key="para">{{ para }} </p>
+        <p v-for="para in this.about.website.info" :key="para">
+          {{ para }} <a href="https://brianetoon.com/" target="_blank">Brian Toon</a>.
+        </p>
       </div>
 
       <img class="quote" alt="quote"
@@ -73,6 +75,9 @@ img.quote {
 }
 .about-content h2 {
   margin-bottom: 15px;
+}
+.about-content a {
+  color: var(--clr-primary);
 }
 
 @media screen and (min-width: 600px) {
